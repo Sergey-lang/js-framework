@@ -7,7 +7,7 @@ export default {
         format: "iife"
     },
     plugins: [
-        css(),
+        css({output: "bundle.css"}),
         nodeResolve()
     ]
 }
