@@ -25,17 +25,17 @@ export class Card extends DivComponent {
         );
         this.el.innerHTML = `
 			<div class="card__image">
-				<img src="https://covers.openlibrary.org/b/olid/${this.cardState.cover_edition_key}-M.jpg" alt="Обложка" />
+				<img src="https://covers.openlibrary.org/b/olid/${this.cardState.cover_edition_key}-M.jpg" alt="poster" />
 			</div>
 			<div class="card__info">
 				<div class="card__tag">
-					${this.cardState.subject ? this.cardState.subject[0] : 'Не задано'}
+					${this.cardState.subject ? this.cardState.subject[0] : 'Not set'}
 				</div>
 				<div class="card__name">
 					${this.cardState.title}
 				</div>
 				<div class="card__author">
-					${this.cardState.author_name ? this.cardState.author_name[0] : 'Не задано'}
+					${this.cardState.author_name ? this.cardState.author_name[0] : 'No name'}
 				</div>
 				<div class="card__footer">
 					<button class="button__add ${existInFavorites ? 'button__active' : ''}">

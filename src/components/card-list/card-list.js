@@ -15,7 +15,7 @@ export class CardList extends DivComponent {
 			return this.el;
 		}
 		this.el.classList.add('card_list');
-		this.el.innerHTML = `<h1>Find - ${this.parentState.list.length}</h1>`
+		this.el.innerHTML = `<h1>Find - ${this.parentState.numFound}</h1>`
 		// const cardGrid = document.createElement('div');
 		// cardGrid.classList.add('card_grid');
 		// this.el.append(cardGrid);
